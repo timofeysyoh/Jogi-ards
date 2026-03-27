@@ -1,27 +1,136 @@
-#container {
-  text-align: center;
+// .home-bg {
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+//   --background: url('/assets/Background.png') no-repeat center center / cover;
+
+// }
+
+
+.menu-list {
+
+  width: 320px; /* ширина */
+  margin-inline: auto;
+  margin-top: 27px;
+
+
+
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #DFDFDF;
+
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-#container strong {
+// .menu-list ion-item::part(native) {
+
+//   border-bottom: 2px solid #DFDFDF;
+
+// }
+// .menu-list ion-item:last-child::part(native) {
+
+//   border-bottom: none;
+
+// }
+
+// .menu-item {
+//   --padding-end: px;
+  
+// }
+
+
+.info-btn {
+  width: 30px;
+  height: 30px;
+  min-width:30px;
+  min-height:30px;
+--border-radius: 50%;
+
+
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+
+  font-family: "Sitka Small", "Sitka Text", serif;
+  font-weight: 600;
+  font-style: italic;
   font-size: 20px;
-  line-height: 26px;
+  text-transform: none;
+
+   --border-color: #000000;
+   --color: #000000;
+
+   
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.add-card-btn {
+  position: fixed;
 
-  color: #8c8c8c;
+  /* ⬇️ позиція */
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%); 
 
-  margin: 0;
+  /* ⬇️ розмір */
+  width: 207px;
+  height: 43px;
+  min-width: 207px;
+  min-height: 43px;
+
+  /* ⬇️ кольори */
+  --background: #F8F9FA;
+  --color: #C2C2C2;
+
+  /* ⬇️ форма */
+  --border-radius: 999px;
+
+  /* ⬇️ внутрішні відступи */
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+
+  /* ⬇️ текст */
+  font-size: 22px;
+  text-transform: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#container a {
-  text-decoration: none;
+.add-card-modal {
+  --border-radius: 24px 24px 0 0;
+  --box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.add-card-content::part(scroll) {
+  display: flex;              /* вмикаємо flex */
+  flex-direction: column;     /* кнопки вертикально */
+
+  align-items: center;        /* центрування по ширині */
+  padding-top: 100px; 
+  height: 100%;               /* займає всю висоту модалки */
+  gap: 50px;                  /* відступ між кнопками 50px */
+}
+
+
+
+/* ДВІ ВЕЛИКІ КНОПКИ В МОДАЛЦІ */
+.action-btn {
+  width: 320;
+  height: 100;
+  min-width: 320;
+  min-height: 100;
+  
+  --border-radius: 26px;
+  --border-color: #000;
+  --color: #000;
+  --background: transparent;
+
+  font-family: 'Tektur', sans-serif;
+  font-size: 30px;
+  text-transform: none;
+  white-space: nowrap;        /* забороняє перенос рядка */
+  text-align: center; 
 }

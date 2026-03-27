@@ -1,0 +1,51 @@
+.camera-btn {
+
+  position: fixed;
+
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 80px;
+  height: 80px;
+
+  min-width: 80px;
+  min-height: 80px;
+
+  --border-radius: 50%;
+
+  --background: #F8F9FA;
+
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+
+}
+
+.camera-btn::part(native) {
+
+  border: 4px solid #C2C2C2;
+
+}
+
+.camera-rect {
+
+  position: fixed;
+
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 320px;
+  height: 190px;
+
+  border-radius: 32px;
+
+  background: transparent;
+
+  border: 3px solid rgba(0,0,0,0.3); /* можеш змінити колір */
+
+  box-shadow: 0 0 0 2000px rgba(0,0,0,0.3);
+
+}
