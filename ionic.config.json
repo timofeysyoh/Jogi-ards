@@ -1,0 +1,7 @@
+{
+  "name": "JogiCards",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
